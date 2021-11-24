@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calulator</title>
+  </head>
+  <body>
+    <div class="main-form">
+      <div class="calculator">
+        <div class="display-screen" id="display-screen">
+          <div id="input-expression"></div>
+          <div id="output-expression"></div>
+        </div>
+        <div onclick="inputEnter(1)" class="button number">1</div>
+        <div onclick="inputEnter(2)" class="button number">2</div>
+        <div onclick="inputEnter(3)" class="button number">3</div>
+        <div onclick="inputEnter('+')" class="button operator">+</div>
+        <div onclick="inputEnter(4)" class="button number">4</div>
+        <div onclick="inputEnter(5)" class="button number">5</div>
+        <div onclick="inputEnter(6)" class="button number">6</div>
+        <div onclick="inputEnter('-')" class="button operator">-</div>
+        <div onclick="inputEnter(7)" class="button number">7</div>
+        <div onclick="inputEnter(8)" class="button number">8</div>
+        <div onclick="inputEnter(9)" class="button number">9</div>
+        <div onclick="inputEnter('*')" class="button operator">*</div>
+        <div onclick="inputEnter('C')" class="button cancel">C</div>
+        <div onclick="inputEnter(0)" class="button number">0</div>
+        <div onclick="inputEnter('=')" class="button number">=</div>
+        <div onclick="inputEnter('/')" class="button operator">/</div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
