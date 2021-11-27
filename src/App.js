@@ -28,7 +28,13 @@ function App() {
       <h1>Calulator Using React.js</h1>
       <div class="calculator">
         <div className="display-screen" id="display-screen">
-          <div id="input-expression">{inputExpression}</div>
+          <input
+            type="text"
+            disabled
+            className="input-expression"
+            id="input-expression"
+            value={inputExpression}
+          />
           <div id="output-expression">{outputExpression}</div>
         </div>
         {ligatures.map((el) => (

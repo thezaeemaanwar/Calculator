@@ -56,3 +56,12 @@
   background-color: #88a5ba;
   color: white;
 }
+
+.input-expression {
+  font-family: arial;
+  font-weight: 600;
+  font-size: 22px;
+  border: none;
+  background: transparent;
+  width: 100%;
+}
