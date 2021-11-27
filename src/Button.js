@@ -16,21 +16,9 @@ const Button = ({ content, input, setInput, output, setOutput }) => {
       if (output !== "") {
         setInput("");
         setOutput("");
-      } else setInput(input + content);
+      }
+      setInput(input + content);
     }
-    // if (value == "=") {
-    //     output.innerHTML = eval(input.innerHTML);
-    //   } else if (value == "C") {
-    //     output.innerHTML = "";
-    //     input.innerHTML = "";
-    //   } else {
-    //     console.log("output.innerHTML", output.innerHTML);
-    //     if (output.innerHTML != "") {
-    //       input.innerHTML = "";
-    //       output.innerHTML = "";
-    //     }
-    //     input.innerHTML = input.innerHTML + value;
-    //   }
   };
   return (
     <div
