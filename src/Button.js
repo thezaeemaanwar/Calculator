@@ -3,8 +3,12 @@ import "./App.css";
 const Button = ({ content, input, setInput, output, setOutput }) => {
   const inputEnter = () => {
     if (content === "=") {
-      // var EVAL_IS_BAD__AVOID_THIS = ;
-      setOutput(this.eval(input));
+      // var EVAL_IS_BAD__AVOID_THIS = eval;
+      try {
+        setOutput(Function("return " + input));
+      } catch (e) {
+        alert("Invalid Expression");
+      }
     } else if (content === "C") {
       setOutput("");
       setInput("");
